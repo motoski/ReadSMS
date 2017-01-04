@@ -16,7 +16,7 @@ public class SMSReceiver extends BroadcastReceiver implements TextToSpeech.OnIni
 	
 	@Override
 	public void onInit(int p1) {
-		tts.speak(message, TextToSpeech.QUEUE_ADD, null);
+		tts.speak(message, TextToSpeech.QUEUE_FLUSH, null);
 	}
 
 	@Override
